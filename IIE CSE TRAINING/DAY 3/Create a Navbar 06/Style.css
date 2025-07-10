@@ -76,6 +76,8 @@ body {
   height: 30vh;
   margin: 20px;
   gap: 30px; /* Add space between boxes */
+  position: relative;
+  top: -40%;
 }
 
 .box {
@@ -119,14 +121,21 @@ body {
   justify-content: center;
   align-items: stretch;
   width: 90vw;
-  height: 10vh;
-  
-  margin: 130px 0;
-  gap: 30px; /* Add space between boxes */
+  /* Remove or comment out the fixed height */
+  /* height: 10vh; */
+  margin: 30px 0;
+  gap: 30px;
 }
 #container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+}
+.box2 {
+  width: 80px;
+  height: 80px;
+  background: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
