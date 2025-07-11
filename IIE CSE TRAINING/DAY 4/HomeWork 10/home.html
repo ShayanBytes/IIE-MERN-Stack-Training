@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | Life Epic Games</title>
+    <link rel="stylesheet" href="Style.css" />
+    <style>
+      body.home-bg {
+        background: linear-gradient(120deg, #232526 0%, #0f2027 100%);
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #fff;
+      }
+      .epic-hero {
+        width: 100vw;
+        min-height: 60vh;
+        background: linear-gradient(90deg, #0f2027 0%, #2c5364 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 20px 40px 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      }
+      .epic-hero h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+        color: #fff;
+        text-shadow: 0 4px 24px #000a, 0 1px 0 #fff2;
+      }
+      .epic-hero p {
+        font-size: 1.3rem;
+        color: #e0e0e0;
+        max-width: 600px;
+        margin: 0 auto 32px auto;
+        line-height: 1.6;
+      }
+      .epic-cta {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        margin-top: 24px;
+      }
+      .epic-cta a {
+        background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 14px 36px;
+        border-radius: 32px;
+        text-decoration: none;
+        box-shadow: 0 2px 12px #0005;
+        transition: background 0.2s, transform 0.2s;
+        letter-spacing: 1px;
+      }
+      .epic-cta a:hover {
+        background: linear-gradient(90deg, #dd2476 0%, #ff512f 100%);
+        transform: translateY(-2px) scale(1.04);
+      }
+      .epic-featured {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        padding: 48px 24px 32px 24px;
+        background: linear-gradient(90deg, #232526 0%, #414345 100%);
+      }
+      .epic-card {
+        background: #181a23;
+        border-radius: 18px;
+        box-shadow: 0 2px 16px #0006;
+        width: 320px;
+        overflow: hidden;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .epic-card:hover {
+        transform: translateY(-6px) scale(1.03);
+        box-shadow: 0 8px 32px #000a;
+      }
+      .epic-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        background: #222;
+      }
+      .epic-card-content {
+        padding: 20px 18px 18px 18px;
+      }
+      .epic-card-content h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.25rem;
+        color: #ff512f;
+        font-weight: 700;
+      }
+      .epic-card-content p {
+        margin: 0;
+        color: #e0e0e0;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body class="home-bg">
+    <header class="navbar">
+      <img src="Images/download.png" alt="Logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="index.html">Student profile</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="epic-hero">
+      <h1>Welcome to Life Epic Games</h1>
+      <p>
+        Discover, play, and connect with the most epic games and experiences.
+        Dive into a world of adventure, creativity, and community—where every
+        gamer finds their place.
+      </p>
+      <div class="epic-cta">
+        <a href="index.html">Explore Profiles</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </section>
+    <section class="epic-featured">
+      <div class="epic-card">
+        <img src="Images/1162247.jpg" alt="Featured Game 1" />
+        <div class="epic-card-content">
+          <h3>Adventure Quest</h3>
+          <p>
+            Embark on a journey through mystical lands, conquer challenges, and
+            become a legend in Adventure Quest.
+          </p>
+        </div>
+      </div>
+      <div class="epic-card">
+        <img src="Images/download.jpeg" alt="Featured Game 2" />
+        <div class="epic-card-content">
+          <h3>Creative Builder</h3>
+          <p>
+            Unleash your imagination and build your own worlds. Share your
+            creations and inspire others!
+          </p>
+        </div>
+      </div>
+      <div class="epic-card">
+        <img src="Images/images.jpeg" alt="Featured Game 3" />
+        <div class="epic-card-content">
+          <h3>Battle Arena</h3>
+          <p>
+            Compete with friends and players worldwide in fast-paced,
+            action-packed arenas. Who will be the champion?
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

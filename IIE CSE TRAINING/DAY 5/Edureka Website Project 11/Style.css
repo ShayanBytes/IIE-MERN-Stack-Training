@@ -1,0 +1,223 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #ffffff;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Changed from row to column */
+}
+.navbar_1 {
+  height: 7%;
+  background-color: #ffffff;
+  color: #fff;
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  align-items: center;
+  justify-content: space-between; /* Space out children */
+  padding: 0 20px; /* Reduced horizontal padding */
+}
+.navbar_1 img {
+  width: 120px; /* Adjusted for logo image */
+  height: 40px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+.logos {
+  width: 120px; /* Adjusted for logo image */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logos img {
+  max-width: 80px;
+  max-height: 32px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+.navbar_1_links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar_1_links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+.login,
+.signup {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login {
+  background: #fff;
+  color: #000;
+}
+.signup {
+  background: #007bff;
+  color: #fff;
+}
+.navbar_1_links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar_1_links a {
+  color: #000000; /* Change link color */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+.navbar_1_links a:hover {
+  color: #0056b3; /* Optional: color on hover */
+}
+
+.navbar_2 {
+  height: 100px;
+  background-color: #0d1c46;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px; /* Reduced horizontal padding */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.popular_courses label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.popular_courses select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar_LINKS_2 ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_LINKS_2 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar_LINKS_2 a:hover {
+  color: #ffcc00;
+}
+.Banner img {
+  width: 100vw !important;
+}
+
+.threeBoxes {
+  display: flex;
+  width: 100%; /* add this to take up full width */
+  height: 400px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+
+  padding: 0; /* add this to remove any padding */
+  margin: 0; /* add this to remove any margin */
+  position: relative;
+
+}
+.threeBoxes img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+  top: -100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* add this to set the background color of the image to white */
+}
+.threeBoxes h2 {
+  position: relative;
+  top: -120px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  font: lighter;
+  font: serif;
+}
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  top: -170px; /* Adjusted to position the grid */
+}
+
+.courseCard {
+  background-color: #071f3d; /* Richer blue */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.courseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.courseCard img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.courseCard h3 {
+  font-size: 20px;
+  margin: 10px 0 8px;
+}
+
+.courseCard p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.contentContainer h2{
+  padding-left: 20px;
+  position: relative;
+  top: -120px; /* Adjusted to position the heading */
+}
