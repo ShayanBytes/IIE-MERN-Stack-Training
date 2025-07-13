@@ -1,0 +1,89 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers vertically */
+    min-height: 100vh;
+    margin: 0;
+  background: linear-gradient(135deg, #160672 0%, #000000 100%);
+  color: aliceblue;
+     
+  
+}
+.form_container{
+    width: 270px;
+    height: 450px;
+    
+   
+    background: linear-gradient(135deg, #3325ff 0%, #000000 100%);
+   padding: 20px;
+     margin:20px;
+    border-radius: 25px;
+     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+
+}
+.form_container form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  
+    font-size: small;
+}
+.checkbox_container {
+    display: flex;
+    gap: 6px; /* space between checkboxes */
+    align-items: center;
+}
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+.Submit{
+    background-color: rgb(8, 196, 33);
+   color: rgb(255, 255, 255);
+   border-radius: 20px;
+   padding: 4px 8px;
+   position: relative;
+   top: 10px;
+ 
+  
+}
+
+.form_container label,
+.form_container select,
+
+.form_container input {
+    
+    font-size: 0.75rem;}
+
+    .form_container input,
+.form_container select {
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 0.95rem;
+}
+.checkbox_container,
+.radio_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+textarea {
+  
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+ 
+}
+input{
+    background-color: rgb(85, 136, 255);
+}
+.checkbox_container input,
+.radio_container input {
+
+    background-color: #000000;
+}
