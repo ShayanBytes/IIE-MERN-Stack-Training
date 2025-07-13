@@ -3,6 +3,7 @@ body {
   height: 100vh;
   display: flex;
   background-color: #ffffff;
+  font-family: 'Playfair Display', serif;
 }
 .main {
   width: 100%;
@@ -149,7 +150,6 @@ body {
   padding: 0; /* add this to remove any padding */
   margin: 0; /* add this to remove any margin */
   position: relative;
-
 }
 .threeBoxes img {
   width: 300px;
@@ -178,20 +178,25 @@ body {
   width: 100%;
   max-width: 1600px;
   margin: auto;
-  padding: 40px;
+  padding: 20px;
   box-sizing: border-box;
   position: relative;
   top: -170px; /* Adjusted to position the grid */
+ 
 }
 
 .courseCard {
-  background-color: #071f3d; /* Richer blue */
-  padding: 20px;
+  
+  padding: 20px ;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  color: white;
+  background-color: #4648c5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+  color: rgb(17, 4, 32);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 10px;
+  
+ 
 }
 
 .courseCard:hover {
@@ -216,8 +221,165 @@ body {
   font-size: 16px;
   line-height: 1.4;
 }
-.contentContainer h2{
+.contentContainer {
+  width: 100%;
+ height: 800px;
+ padding-top : 20px;
+  
+}
+.contentContainer h2 {
   padding-left: 20px;
   position: relative;
-  top: -120px; /* Adjusted to position the heading */
+  top: -160px;
+  left: 10px; /* Adjusted to position the heading */
+}
+.programs-section {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  top: -200px;
+  padding: 20px;
+ 
+
+}
+
+.programs-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  top:-3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* add this to center the cards horizontally */
+  margin: 0 auto; /* add this to center the cards vertically */
+}
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.card-header.purple {
+  background: linear-gradient(to right, #d13aff, #e471b2);
+}
+
+.card-header.pink {
+  background: linear-gradient(to right, #a64bf4, #ff6aa7);
+}
+
+.card-header.blue {
+  background: linear-gradient(to right, #00b6f1, #90d97f);
+}
+
+.card-header .tag {
+  background: white;
+  color: black;
+  font-size: 10px;
+  padding: 3px 6px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  font-size: 14px;
+  margin: 0 0 10px;
+}
+
+.reviews {
+  font-size: 14px;
+  color: #444;
+}
+
+.stars {
+  color: #f4b400;
+  margin-right: 6px;
+}
+.categories-section {
+  width: 70vw;
+  height: auto;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  top: -200px;
+}
+
+.categories-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  gap: 20px;
+}
+
+.category-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.category-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
 }
