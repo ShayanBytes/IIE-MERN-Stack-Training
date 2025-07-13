@@ -4,6 +4,10 @@ body {
   display: flex;
   background-color: #ffffff;
   font-family: 'Playfair Display', serif;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+ 
 }
 .main {
   width: 100%;
@@ -13,18 +17,21 @@ body {
 }
 .navbar_1 {
   height: 7%;
+width: 100%;
   background-color: #ffffff;
   color: #fff;
   display: flex;
   flex-direction: row; /* Changed from column to row */
   align-items: center;
   justify-content: space-between; /* Space out children */
-  padding: 0 20px; /* Reduced horizontal padding */
+ 
 }
 .navbar_1_links li{
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+  gap: 30px;
+  
  
   
 }
@@ -32,7 +39,9 @@ body {
   width: 120px; /* Adjusted for logo image */
   height: 40px;
   object-fit: contain;
-  margin-top: 10px;
+  position: relative;
+  left: 20px;
+
 }
 .logos {
   width: 120px; /* Adjusted for logo image */
@@ -40,6 +49,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  
 }
 .logos img {
   max-width: 80px;
@@ -49,7 +59,7 @@ body {
 }
 .navbar_1_links ul {
   display: flex;
-  gap: 30px;
+  gap: 80px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -59,14 +69,21 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
+  
+}
+.navbar_1_links ul li {
+  margin-right: 80px;
+  font-size: larger;
 }
 .buttons {
   display: flex;
-  gap: 15px;
+  gap: 10px;
+  position: relative;
+  left: -20px;
 }
 .login,
 .signup {
-  padding: 8px 20px;
+  padding: 8px 15px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
@@ -169,14 +186,15 @@ body {
   background-color: #ffffff; /* add this to set the background color of the image to white */
 }
 .threeBoxes h2 {
+  font-size: 15px;
   position: relative;
-  top: -120px;
+  top: -110px;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #000000;
-  font: lighter;
-  font: serif;
+ 
+font-family:  'Playfair Display', serif;
 }
 .coursesGrid {
   display: grid;
@@ -196,7 +214,7 @@ body {
   
   padding: 20px ;
   border-radius: 12px;
-background: radial-gradient(circle at 30% 100%, rgb(255, 255, 255), rgb(45, 9, 104));
+background-color: #14155e;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
   color: rgb(17, 4, 32);
   text-align: center;
@@ -220,13 +238,17 @@ background: radial-gradient(circle at 30% 100%, rgb(255, 255, 255), rgb(45, 9, 1
 }
 
 .courseCard h3 {
-  font-size: 20px;
+  font-size: 15px;
   margin: 10px 0 8px;
+  color: #ffffff;
+
+
 }
 
 .courseCard p {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.4;
+  color: #b8b8b8;
 }
 .contentContainer {
   width: 100%;
@@ -235,10 +257,11 @@ background: radial-gradient(circle at 30% 100%, rgb(255, 255, 255), rgb(45, 9, 1
   
 }
 .contentContainer h2 {
-  padding-left: 20px;
+ 
   position: relative;
   top: -160px;
-  left: 10px; /* Adjusted to position the heading */
+  
+
 }
 .programs-section {
   max-width: 1200px;
@@ -397,6 +420,7 @@ background: radial-gradient(circle at 30% 100%, rgb(255, 255, 255), rgb(45, 9, 1
   gap: 40px;
   flex-direction: column;
 }
+
 .features-grid{
   display: grid;
   width: 60%;

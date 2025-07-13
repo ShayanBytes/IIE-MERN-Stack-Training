@@ -5,7 +5,7 @@ body {
     align-items: center; /* This centers vertically */
     min-height: 100vh;
     margin: 0;
-  background: linear-gradient(135deg, #160672 0%, #000000 100%);
+background-color: #0a0b4b;
   color: aliceblue;
      
   
@@ -19,7 +19,7 @@ body {
    padding: 20px;
      margin:20px;
     border-radius: 25px;
-     box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+     box-shadow: 0 8px 24px rgba(0,0,0,1);
 
 }
 .form_container form{
@@ -38,6 +38,7 @@ h3{
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 10px;
+    
 }
 .Submit{
     background-color: rgb(8, 196, 33);
@@ -80,7 +81,7 @@ textarea {
  
 }
 input{
-    background-color: rgb(85, 136, 255);
+    background-color: rgb(255, 255, 255);
 }
 .checkbox_container input,
 .radio_container input {
