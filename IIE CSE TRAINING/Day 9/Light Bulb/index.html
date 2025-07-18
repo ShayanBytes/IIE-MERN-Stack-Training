@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Light Switch</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #222;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      width: 40vw;
+      height: 50vh;
+    }
+
+    .light-image {
+      width: 500px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+    }
+
+    .on-btn {
+      background-color: #f5c518;
+      color: #000;
+    }
+
+    .off-btn {
+      background-color: #555;
+      color: #fff;
+    }
+
+    .on-btn:hover {
+      background-color: #ffd700;
+    }
+
+    .off-btn:hover {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img id="lightBulb" class="light-image" src="Light Bulb/light off.jpg" alt="Light Bulb">
+    <div class="btn-group">
+      <button class="on-btn" onclick="turnOn()">ON</button>
+      <button class="off-btn" onclick="turnOff()">OFF</button>
+    </div>
+  </div>
+
+  <script>
+    const bulbImage = document.getElementById('lightBulb');
+
+    function turnOn() {
+      bulbImage.src = 'Light Bulb/light on.jpg';
+    }
+
+    function turnOff() {
+      bulbImage.src = 'Light Bulb/light off.jpg';
+    }
+  </script>
+
+</body>
+</html>

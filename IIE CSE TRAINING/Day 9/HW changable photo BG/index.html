@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image & Background Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left-panel">
+            <div class="people-box">
+                <img src="Images/—Pngtree—smiling business people_96878 (1).png" class="thumb"
+                    onclick="selectPerson(this)">
+                <img src="Images/—Pngtree—smiling businessman in a sharp_17462135.png" class="thumb"
+                    onclick="selectPerson(this)">
+                <img src="person3.png" class="thumb" onclick="selectPerson(this)">
+                <img src="person4.png" class="thumb" onclick="selectPerson(this)">
+            </div>
+            <div class="color-box">
+                <div class="color-swatch" style="background-color: #f44336;" onclick="changeBgColor(this)"></div>
+                <div class="color-swatch" style="background-color: #4CAF50;" onclick="changeBgColor(this)"></div>
+                <div class="color-swatch" style="background-color: #2196F3;" onclick="changeBgColor(this)"></div>
+                <div class="color-swatch" style="background-color: #FFEB3B;" onclick="changeBgColor(this)"></div>
+            </div>
+        </div>
+
+        <div class="display-panel" id="display-panel">
+            <img id="main-image" src="" alt="Selected" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
