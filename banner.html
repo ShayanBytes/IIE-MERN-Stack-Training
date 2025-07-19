@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Banner</title>
+    <link rel="stylesheet" href="banner.css">
+</head>
+<body>
+    <div id="banner">
+        <button class="arrow left" onclick="changeSlide(-1)">
+            <img src="IIE CSE TRAINING/Day 10/Functional Banner/Images/right-arrow.png"  class="buttons">
+        </button>
+
+        <div class="slides">
+            <img src="IIE CSE TRAINING/Day 10/Functional Banner/Images/Banner 1.jpeg"  class="slide" alt="">
+            <img src="IIE CSE TRAINING/Day 10/Functional Banner/Images/Banner 2.jpeg" class="slide active" alt="">
+            <img src="IIE CSE TRAINING/Day 10/Functional Banner/Images/Banner 3.jpeg"  class="slide" alt="">
+        </div> 
+
+
+        <button class="arrow right" onclick="changeSlide(+1)">
+            <img src="IIE CSE TRAINING/Day 10/Functional Banner/Images/right-arrow.png" class="buttons" alt="">
+        </button>
+
+    </div>
+    <script src="banner.js"></script>
+</body>
+</html>
