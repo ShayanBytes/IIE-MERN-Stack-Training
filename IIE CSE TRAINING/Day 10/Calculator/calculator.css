@@ -15,7 +15,7 @@ body{
     display: flex;
    align-items: center;
     flex-direction: column;
-    width:25vw;
+    width:24vw;
     height: 85vh;
     background-color: rgb(32, 32, 32);
     border-radius: 17px;
@@ -90,16 +90,16 @@ input{
 }
 .image img{
 
-    height: 44px;
+    height: 33px;
     position: relative;
     top: 126px;
-    left: -46px;
+    left: -37px;
     ;
 }
 .image h3{
     rotate: -90deg;
     position: relative;
-    left: -118px;
+    left: -114px;
     top: 190px;
       font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
