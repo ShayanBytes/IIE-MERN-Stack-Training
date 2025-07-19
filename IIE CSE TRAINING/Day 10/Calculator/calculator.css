@@ -3,7 +3,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffffff;
+  background:linear-gradient(90deg, #ffffff 0%, #ff7b00 100%);
+}
+.mainContainer{
+    display: flex;
+    position: relative;
+    left:120px;
 }
 
 #container{
@@ -53,7 +58,7 @@ button{
     font-weight: bold;
     cursor: pointer;
     border: none;
-  color : rgb(204, 204, 204);
+  color : rgb(255, 255, 255);
     box-shadow: #000000 2px 2px 2px 2px;
 }
 button:hover{
@@ -87,7 +92,7 @@ input{
 
     height: 44px;
     position: relative;
-    top: -64px;
+    top: 126px;
     left: -46px;
     ;
 }
@@ -95,6 +100,7 @@ input{
     rotate: -90deg;
     position: relative;
     left: -118px;
+    top: 190px;
       font-family: "Bitcount Grid Single", system-ui;
   font-optical-sizing: auto;
   font-weight:lighter;
@@ -111,4 +117,24 @@ input{
 .image{
     position: relative;
     top: 40px;
+}
+.Heading1 h1{
+     font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: 5px;
+  font-weight:400;
+  font-style:bold;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.2,
+    "ELSH" 0,
+    "ELXP" 0;
+    color: #ffffff;
+    opacity: 90%;
+    text-shadow: #000000 1px 1px 1px ;
+ 
+   
+    font-size: 100px;
+    position: relative;
+    top: -50px;
+    text-align: center;
 }
