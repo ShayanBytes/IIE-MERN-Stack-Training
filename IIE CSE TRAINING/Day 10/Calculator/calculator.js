@@ -1,7 +1,29 @@
 let display = document.getElementById("result");
 
+
 function appendValue(value) {
+  const operators = ['+', '-', '*', '/', '%','.'];
+  const lastChar = display.value.slice(-1);
+
+ 
+  if (operators.includes(value) && operators.includes(lastChar)) {
+    return; 
+  }
+
+     if (operators.includes(lastChar) || lastChar === ".") {
+      display.value = value.slice(0, -1) + value; // Replace last operator
+    } else {
+      display.value += value;
+
+
+
+  if (display.value === "" && operators.includes(value) && value !== '-') {
+    return; 
+  }
+
+
   display.value += value;
+}
 }
 
 function clearDisplay() {
