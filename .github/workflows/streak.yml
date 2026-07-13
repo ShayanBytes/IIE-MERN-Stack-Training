@@ -1,0 +1,26 @@
+name: Maintain GitHub Streak
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  auto-streak:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: bmiit145/auto-streak-keeper@v1.0.1
+        with:
+          user-name: ${{ secrets.GITHUB_USER_NAME }}
+          user-email: ${{ secrets.GITHUB_USER_EMAIL }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
